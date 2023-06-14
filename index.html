@@ -5,18 +5,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="template.css">
 </head>
 
 <body>
+    <!--—BEGIN HEADER -->
     <header class="header">
-        <div class="containder">
-
+        <div class="container">
+            <div class="header__logo">
+                <img class="header__logo-img" src="./img/svg/SpaceX-Logo.svg" alt="">
+            </div>
+            <nav class="header__nav nav">
+                <ul class="list-reset nav__list">
+                    <li class="nav__item item">
+                        <a href="" class="item__link">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="nav__item item">
+                        <a href="" class="item__link">
+                            Технология
+                        </a>
+                    </li>
+                    <li class="nav__item item">
+                        <a href="" class="item__link">
+                            График полетов
+                        </a>
+                    </li>
+                    <li class="nav__item item">
+                        <a href="" class="item__link">
+                            Гарантии
+                        </a>
+                    </li>
+                    <li class="nav__item item">
+                        <a href="" class="item__link">
+                            О компании
+                        </a>
+                    </li>
+                    <li class="nav__item item">
+                        <a href="" class="item__link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
+    <!--—END HEADER -->
     <main class="main">
-        <div class="containder">
+        <div class="mars-bg">
+            <img src="./img/mars-space2.png" alt="" class="mars-bg__img">
 
         </div>
+        <!-- --—BEGIN JORNEY -->
+        <section class="journey">
+            <div class="container">
+                <div class="journey__start">
+                    <h1 class="journey__title">
+                        Путешествие
+                    </h1>
+                    <p class="journey__desc">
+                        На красную планету
+                    </p>
+                    <button class="journey__button btn-reset">
+                        Начать путешествие
+                    </button>
+                </div>
+                <div class="journey__about">
+                    <table class="journey__table table">
+                        <tr class="table__row">
+                            <td class="table__cell cell cell__tl">
+                                <a href="" class="cell__link">
+                                    <p class="cell__text">мы</p>
+                                    <p class="cell__value">1</p>
+                                    <p class="cell__text">на рынке</p>
+                                </a>
+                            </td>
+                            <td class="table__cell cell cell__tr">
+                                <a href="" class="cell__link">
+                                    <p class="cell__text">гарантируем</p>
+                                    <p class="cell__value">50%</p>
+                                    <p class="cell__text">безопасность</p>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell cell cell__bl">
+                                <a href="" class="cell__link">
+                                    <p class="cell__text">календарик за</p>
+                                    <p class="cell__value">2001<span class="cell__year">г.</span></p>
+                                    <p class="cell__text">в подарок</p>
+                                </a>
+                            </td>
+                            <td class="table__cell cell cell__br">
+                                <a href="" class="cell__link">
+                                    <p class="cell__text">путешествие</p>
+                                    <p class="cell__value">597</p>
+                                    <p class="cell__text">дней</p>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <img src="./img/mars.png" alt="" class="mars-bg__img-top">
+            </div>
+        </section>
+        <!-- --—END JORNEY -->
     </main>
 </body>
 
