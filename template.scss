@@ -115,6 +115,15 @@ body {
                     opacity: 1;
                 }
             }
+
+            &:focus {
+                color: rgba(255, 255, 255, 0.612);
+                outline: none;
+
+                &::after {
+                    opacity: 1;
+                }
+            }
         }
     }
 }
@@ -209,10 +218,12 @@ body {
 
         &:hover {
             background: linear-gradient(45deg, #ffffff10 10%, #fd532023 100%);
+            color: white;
         }
 
         &:focus {
             background: linear-gradient(45deg, #ffffff10 10%, #fd532023 100%);
+            outline: none;
         }
 
         &:active {
@@ -254,6 +265,10 @@ body {
                 &:hover {
                     color: #fff;
                 }
+
+                &:focus {
+                    outline: none;
+                }
             }
 
             &__tl {
@@ -265,11 +280,12 @@ body {
                 }
 
                 a:hover {
-
                     border-image: linear-gradient(320deg, transparent -40%, #ffffff83, transparent 40%) 1;
                 }
 
-
+                a:focus {
+                    border-image: linear-gradient(320deg, transparent -40%, #ffffff83, transparent 40%) 1;
+                }
             }
 
             &__tr {
@@ -280,7 +296,10 @@ body {
                 }
 
                 a:hover {
+                    border-image: linear-gradient(45deg, transparent -40%, #ffffff83, transparent 40%) 1;
+                }
 
+                a:focus {
                     border-image: linear-gradient(45deg, transparent -40%, #ffffff83, transparent 40%) 1;
                 }
             }
@@ -293,7 +312,10 @@ body {
                 }
 
                 a:hover {
+                    border-image: linear-gradient(225deg, transparent -40%, #ffffff83, transparent 40%) 1;
+                }
 
+                a:focus {
                     border-image: linear-gradient(225deg, transparent -40%, #ffffff83, transparent 40%) 1;
                 }
             }
@@ -306,7 +328,10 @@ body {
                 }
 
                 a:hover {
+                    border-image: linear-gradient(135deg, transparent -40%, #ffffff83, transparent 40%) 1;
+                }
 
+                a:focus {
                     border-image: linear-gradient(135deg, transparent -40%, #ffffff83, transparent 40%) 1;
                 }
             }
@@ -327,4 +352,26 @@ body {
         }
 
     }
+
+    .mars-bg__pointer {
+        position: absolute;
+        right: 598px;
+        bottom: 80px;
+        width: 398px;
+        height: 49px;
+        opacity: 0.6;
+
+
+    }
+
+
+}
+
+.fancybox-content {
+    padding: 0;
+}
+
+#sendform {
+    display: none;
+    max-width: 90%;
 }
