@@ -89,7 +89,7 @@ body {
   width: 100%;
   height: 3px;
   border-radius: 3px;
-  background-color: hsla(0, 0%, 100%, 0.55);
+  background-color: white;
 }
 .header .nav .burger__line:nth-child(1) {
   top: 0;
@@ -99,6 +99,9 @@ body {
 }
 .header .nav .burger__line:nth-child(3) {
   top: 100%;
+}
+.header .nav .burger :hover .burger__line {
+  background-color: rgba(255, 255, 255, 0.57);
 }
 .header .item__link {
   white-space: nowrap;
@@ -345,7 +348,6 @@ body {
     font-size: 47px;
   }
   .journey__desc {
-    margin-bottom: 300px;
     background: linear-gradient(45deg, #ffffff 10%, #ff9b7c 50% 100%);
     -webkit-background-clip: text;
   }
@@ -416,5 +418,78 @@ body {
   .journey .table {
     width: 500px;
     margin-right: 10px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 420px;
+  }
+  .header .container {
+    flex-direction: row;
+  }
+  .header__logo {
+    align-items: center;
+    width: 250px;
+  }
+  .header .nav__list {
+    display: none;
+  }
+  .header .nav {
+    align-items: center;
+  }
+  .header .nav .burger {
+    display: block;
+  }
+  .mars-bg__img {
+    height: 485px;
+  }
+  .journey__start {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .journey .mars-bg__img-top {
+    top: 58px;
+    left: 15%;
+    height: 288px;
+  }
+  .journey .mars-bg__pointer {
+    display: none;
+  }
+  .journey__title {
+    font-size: 45px;
+    letter-spacing: 6px;
+    background: linear-gradient(45deg, #ffffff 10%, #ff9b7c 30% 70%, #ffffff 90%);
+    -webkit-background-clip: text;
+  }
+  .journey__desc {
+    margin-bottom: 309px;
+    background: linear-gradient(45deg, #ffffff 3%, #ff9b7c 10% 90%, #ffffff 97%);
+    -webkit-background-clip: text;
+  }
+  .journey__desc-part {
+    margin-right: 129px;
+  }
+  .journey__button {
+    align-self: center;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 320px;
+  }
+  .mars-bg__img {
+    height: 485px;
+  }
+  .journey .mars-bg__img-top {
+    left: 5%;
+  }
+  .journey__title {
+    font-size: 42px;
+    letter-spacing: 0px;
+  }
+  .journey__desc-part {
+    margin-right: 58px;
   }
 }/*# sourceMappingURL=template.css.map */
